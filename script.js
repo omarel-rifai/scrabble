@@ -29,7 +29,7 @@ function populateRack() {
   const rack = $("#rack-tiles").empty();
   currentTiles = getRandomTiles();
   currentTiles.forEach((letter) => {
-    const img = $(`<img src="Scrabble_Tiles/Scrabble_Tile_${letter}.jpg" class="tile" data-letter="${letter}">`);
+    const img = $(`<img src="Scrabble_Tile_${letter}.jpg" class="tile" data-letter="${letter}">`);
     img.draggable({
       revert: "invalid",
       helper: "clone"

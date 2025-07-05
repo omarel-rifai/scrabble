@@ -1,0 +1,34 @@
+<!-- Copyright Omar El-Rifai 2025
+ This is a remake of the game Scrabble, using a single line to play the game and a use of 7 given letters to 
+ make a word. Functioning Submit Word and Restart Game buttons, and score UI. The game currently doesn't have a
+ library for words so the game may not function properly. I need to find one to use.
+ Sources used: jquery.com, wikipedia, jqueryui.com-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scrabble One-Line Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
+</head>
+<body>
+  <h1>Scrabble One-Line</h1>
+
+  <div id="tile-rack">
+    <img src="scrabble-tile-holder-406774_640.png" alt="Tile Rack" class="rack-bg">
+    <div id="rack-tiles"></div>
+  </div>
+  <div id="scrabble-row">
+  </div>
+
+  <div id="word-score">Score: <span id="score">0</span></div>
+
+  <button id="submit-word">Submit Word</button>
+  <button id="reset-game">Restart Game</button>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
